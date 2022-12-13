@@ -76,11 +76,11 @@ function CreateProduct() {
         formData,
         {
           method: "POST",
-          // headers: {
-          //   "Content-Type": "multipart/form-data",
+          headers: {
+            "Content-Type": "multipart/form-data",
 
-          //   // Authorization: token,
-          // },
+            Authorization: token,
+          },
         }
       );
         setLoading(false);
