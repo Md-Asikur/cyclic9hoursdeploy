@@ -28,7 +28,7 @@ export default function Pages() {
         <Route
           path="/create_product"
           exact
-          element={<CreateProduct /> }
+          element={isAdmin ? <CreateProduct /> : <NotFound />}
         />
         <Route
           path="/edit_product/:id"
