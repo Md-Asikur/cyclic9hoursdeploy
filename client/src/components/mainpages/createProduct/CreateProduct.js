@@ -72,7 +72,7 @@ function CreateProduct() {
 
       setLoading(true);
       const res = await axios.post(
-        "https://ecommerce9hours-asikur.onrender.com/api/upload",
+        "/api/upload",
         formData,
         {
           method: "POST",
