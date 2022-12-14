@@ -87,7 +87,7 @@ function CreateProduct() {
         console.log(res)
         setImages(res.data);
      } catch (err) {
-        alert(err.response.data.msg);
+        alert(err.response.data);
      }
   };
 
