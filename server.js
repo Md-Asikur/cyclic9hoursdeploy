@@ -31,7 +31,7 @@ app.use(fileUpload({
 // Routes
 app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
-app.use('/api', require('./routes/upload'))
+
 app.use('/api', require('./routes/productRouter'))
 app.use('/api', require('./routes/paymentRouter'))
 
@@ -68,7 +68,7 @@ if(process.env.NODE_ENV === 'production'){
 //     }
 //   });
 // });
-
+app.use("/api", require("./routes/upload"));
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () =>{
     console.log('Server is running on port', PORT)
